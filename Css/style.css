@@ -1,74 +1,476 @@
+/* =========================
+    All Common style start  
+============================= */
+
 * {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
-ul {
+ul,
+ol {
+    list-style: none;
+}
+
+li{
     list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: #191919;
+
 }
 
 .container {
-    width: 1392px  ;
     margin: 0 auto;
+    width: 1392px;
+}
+
+
+
+/* =========================
+    All Common style end  
+============================= */
+
+
+/* =========================
+    nav  start 
+============================= */
+
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+.nav_container .txt .logo {
+    width: 82px;
+    margin-right: 24px;
+}
+
+.nav_container .txt .logo img {
+    width: 100%;
+}
+
+.nav_container .txt .menu ul {
+    display: flex;
+    gap: 26px;
+}
+
+.nav_container .txt .menu ul li a {
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.nav_container .txt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nav_container .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav_container .btn button {
+    padding: 10px 21px;
+    border-radius: 1000px;
+    border: none;
+}
+
+.nav_container .btn .login {
+    
+    background: #F5F8FF;
+    color: #0057FF;
+}
+
+.nav_container .btn .signup {
+    
+    background: #0057FF;
+    color: #F5F8FF;
+}
+
+.nav_container .btn .freetrial {
+    margin-right: 15px;
+    text-align: center;
+
+}
+
+.nav_container .btn .freetrial img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.nav_container .btn .adobe_logo {
+    width: 60px;
+}
+
+.nav_container .btn .adobe_logo img {
+    width: 100%;
 }
 
 nav {
-    background: #fff;
+    padding: 16px 0;
+    border-bottom: 1px solid #ECECEC;
+
 }
 
-.main_menu {
+.nav_container .btn .divider{
+     height: 20px;
+        width: 1px;
+      background-color: #ccc;
+      margin: 0 6px;
+}
+
+
+
+
+
+/* =========================
+    nav end
+============================= */
+
+
+/* =========================
+    searchbar  start
+============================= */
+
+
+.searchbar_container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 1000px;
+    overflow: hidden;
+    margin: 24px 0;
+}
+
+.search {
+    flex: 2;
+    border-right: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+    padding: 10px 17px;
+}
+
+.search form i {
+    font-size: 20px;
+    color: #696969;
+    margin-right: 10px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    color: #696969;
+    outline: none;
+    font-weight: 500;
+}
+
+ .searchbar_container .text {
+    flex: 1;
+    padding: 10px 17px;
+}
+
+.text ul {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
+    width: 100%;
 }
-.nav_bar {
+
+.text ul li a {
+    text-decoration: none;
+    color: #191919;
+    font-weight: 500;
+    padding: 5px 14px;
+    border-radius: 1000px;
+    transition: all 0.3s linear;
+    text-align: center;
+}
+
+.text ul li a:hover {
+    background-color: #191919;
+    color: #fff;
+}
+
+.text ul li a.active {
+    background-color: #111;
+    color: #fff;
+}
+
+/* =========================
+    searchbar  end
+============================= */
+
+
+/* =========================
+    Dropdown  start
+============================= */
+.dropdown{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.dropdown_container{
     display: flex;
     align-items: center;
-   
+    justify-content: space-between;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-btn span{
+    font-size: 13px;
+}
+
+.filter-btn .icon {
+  height: 18px;
+}
+
+.filter-btn .arrow {
+  width: 7px;
+}
+
+
+
+.dropdown_right h4{
+    font-size: 12px;
+    color: #696969;
 
 }
 
-.nav_logo img {
-    width: 82px;
-    height: 16px;
-}
-
-.nav_list ul {
- display: flex;
- gap: 24px;
- color: black;
-}
-.nav_list ul li {
-    font-family: "Helvetica Neue" ;
-    cursor: pointer;
-
-}
-.button .log_btn{
-   padding:10px 21px 10px 21px ;
-   border-radius: 100px;
-   border-style: none;
-   background-color: #DEE8FF ;
-   color: #0057FF;
-   cursor: pointer;
-
-}
-
-.button .sign_btn {
-    padding:10px 21px 10px 21px ;
-   border-radius: 100px;
-   border-style: none;
-   background-color: #0057FF;
-   color: #ffffff;
-   cursor: pointer;
-}
-
-.img {
+.dropdown_right p{
     display: flex;
-    gap: 14px;
-    padding-left:
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #191919;
 }
+
+
+/* =========================
+    Dropdown  end
+============================= */
+
+
+
+/* =========================
+    Post  start
+============================= */
+#post_design{
+    padding: 20px 0;
+
+}
+
+.post_container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.post .post_text h3 {
+    font-size: 14px;
+    color: #191919;
+    max-width: 220px;
+    
+}
+.post .post_text p {
+    font-size: 11px;
+    color: #191919;
+    
+}
+
+.post_container .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post_container .post .image{
+    max-width: 333px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.post_container .post  .text .post_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    
+}
+
+
+
+.post_container .post  .text .post_icon .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 11px;
+    
+}
+
+/* =========================
+    Post  end
+============================= */
+
+
+
+
+/* =========================
+    Product  start
+============================= */
+#creative_cloud{
+    padding: 32px 30px;
+    background: #F2F2F2;
+    margin-bottom: 40px;
+}
+
+.creative_cloud_container{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.creative_cloud_container .creative_cloud_text h2{
+    font-size: 19px;
+    line-height: 1.57;
+}
+.creative_cloud_container .creative_cloud_text p{
+    font-size: 14px;
+    max-width: 280px;
+    padding: 4px 0 30px 0;
+    line-height: 1.4;
+}
+
+.creative_cloud_container .creative_cloud_text button{
+    font-size: 13px;
+    background: #0057FF;
+    border: none;
+    border-radius: 1000px;
+    color: #ffffff;
+    padding: 10px 20px;
+    line-height: 1.07;
+}
+
+.creative_cloud_container .creative_cloud_products{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 1050px;
+}
+
+.creative_cloud_container .creative_cloud_products .product_post{
+    max-width: 246px;
+
+}
+
+.creative_cloud_container .creative_cloud_products .product_post .text{
+    margin-top: 28px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 12px;
+}
+
+.creative_cloud_container .creative_cloud_products .product_post .text .product_text h3{
+    font-size: 13px;
+    line-height: 1.38;
+    
+}
+
+.creative_cloud_container .creative_cloud_products .product_post .text .product_text p{
+    font-size: 12px;
+    color: #696969;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+
+/* =========================
+    Product  end
+============================= */
+
+
+/* =========================
+    footer  start
+============================= */
+
+footer{
+    padding: 10px 0;
+    border-top: 1px solid #ECECEC;
+}
+
+.footer_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_container .footer_menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer_container .footer_menu ul li a{
+    font-size: 10px;
+    color: #696969;
+    line-height: 1.43;
+}
+
+.footer_container .footer_menu ul .divider{
+     
+      height: 14px;
+      width: 1px;
+      background-color: #ccc;
+      margin: 0 6px;
+
+}
+
+/* =========================
+    footer  end
+============================= */
 
