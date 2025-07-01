@@ -1,51 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First project</title>|
-<link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
-                
-    <link rel="stylesheet" href="./Css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" />
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <title>Document</title>
 </head>
+
 <body>
+  <!-- Navbar Starts -->
   <nav>
     <div class="container">
-        <div class="main_menu">
-            <div class="nav_bar">
-                <div class="nav_logo">
-                    <img src="./Images/Logo.svg" alt="">
-                </div>
-                <div class="nav_list">
-                    <ul>
-                        <li>For You</li>
-                        <li>Discover</li>
-                        <li>Livestreams</li>
-                        <li>Hire</li>
-                        <li>Jobs</li>
-                    </ul>
+      <div class="nav_container">
+        <div class="txt">
+          <div class="logo">
+            <a href="#"><img src="./Images/Discover.png" alt="This is the logo" /></a>
+          </div>
 
-                </div>
-                <div class="button">
-                    <button class="log_btn">Log In</button>
-                    <button class="sign_btn">Sign Up</button>
-                </div>
-                <div class="img">
-                    <img src="./Images/Divider.png" alt="">
-                    <img src="./Images/Free Trial.png" alt="">
-                    <img src="./Images/Logo.png" alt="">
-                </div>
-                
+          <div class="menu">
+            <ul>
+              <li><a href="#">For You</a></li>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Livestreams</a></li>
+              <li><a href="#">Hire</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="btn">
+          <button class="login">Log In</button>
+          <button class="signup">Sign Up</button>
+          <li class="divider"></li>
+          <button class="freetrial">
+            <img src="./images/Free Trial.png" alt="This is a icon" />Free Trial
+          </button>
+          <div class="adobe_logo">
+            <img src="./images/logo1.png" alt="This is the right side adobe logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar ends -->
+
+
+  <!-- searchbar starts -->
+
+
+  <div class="searchbar">
+    <div class="container">
+      <div class="searchbar_container">
+        <div class="search">
+          <form>
+            <i class="fas fa-search"></i>
+            <input type="search" placeholder="Search the creative world at work" />
+          </form>
+        </div>
+        <div class="text">
+          <ul>
+            <li><a href="#" class="active">Projects</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Prototypes</a></li>
+            <li><a href="#">Streams</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Moodboards</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- searchbar ends -->
+
+
+
+  <!-- Buttons dropdown menu starts -->
+  <div class="dropdown">
+    <div class="container">
+      <div class="dropdown_container">
+        <div class="filters">
+          <div class="filter-btn">
+            <img src="./images/Vector.png" class="icon" alt="icon">
+            <span>Creative Fields</span>
+            <img src="./images/Vector 1.png" class="arrow" alt="arrow">
+          </div>
+
+          <div class="filter-btn">
+            <img src="./images/Icon2.png" class="icon" alt="icon">
+            <span>Tools</span>
+            <img src="./images/Vector 1.png" class="arrow" alt="arrow">
+          </div>
+
+          <div class="filter-btn">
+            <img src="./images/Icon3.png" class="icon" alt="icon">
+            <span>Color</span>
+            <img src="./images/Vector 1.png" class="arrow" alt="arrow">
+          </div>
+
+          <div class="filter-btn">
+            <img src="./images/Icon.png" class="icon" alt="icon">
+            <span>Location</span>
+            <img src="./images/Vector 1.png" class="arrow" alt="arrow">
+          </div>
+
+          <div class="filter-btn">
+            <img src="./images/Icon5.png" class="icon" alt="icon">
+            <span>Schools</span>
+            <img src="./images/Vector 1.png" class="arrow" alt="arrow">
+          </div>
+
+          <div class="filter-btn">
+            <img src="./images/Icon6.png" class="icon" alt="icon">
+            <span>Assets</span>
+            <img src="./images/Vector 1.png" class="arrow" alt="arrow">
+          </div>
+
+          <div class="filter-btn">
+            <img src="./images/Icon7.png" class="icon" alt="icon">
+            <span>Subscription</span>
+            <img src="./images/Vector 1.png" class="arrow" alt="arrow">
+          </div>
+        </div>
+
+
+
+
+        <div class="dropdown_right">
+          <h4>Sort</h4>
+          <p>Recommended <img class="arrowc" src="./images/Vector 1.png" alt="arrow"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buttons dropdown menu endss -->
+
+  <!-- post section start-->
+  <section id="post_design">
+    <div class="container">
+      <div class="post_container">
+
+        <div class="post">
+          <div class="image"><img src="./images/1.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>2d Arcade style experiments</h3>
+              <p>ARCADE STUDIO</p>
             </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>95</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1k</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-  </nav>
-  <nav>
-    <div class="container_s">
-        <div>
-            
+
+
+        <div class="post">
+          <div class="image"><img src="./images/2.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Fashion Illustration Vol.22</h3>
+              <p>SEUNGWON HONG</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>187</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1.5k</span>
+              </div>
+            </div>
+          </div>
         </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/3.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>A search for mother</h3>
+              <p>Bade Fuwa</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>78</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>687</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/4.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Cow Cow Cow!</h3>
+              <p>Multiple Owners <img src="./images/Vector 1.png" alt="arrow"></p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>295</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>2k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
     </div>
-  </nav>
+  </section>
+  <!-- post section end -->
+
+
+  <!-- Creative Cloud Section start -->
+  <section id="creative_cloud">
+    <div class="container">
+      <div class="creative_cloud_container">
+
+        <div class="creative_cloud_text">
+          <h2>Create with Creative Cloud</h2>
+          <p>Whatever you want to create, Adobe Creative Cloud has what you need to make it amazing.</p>
+          <button>See all plans</button>
+        </div>
+
+        <div class="creative_cloud_products">
+          <div class="product_post">
+            <div class="image"><img src="./images/5.jpg" alt="post_image"></div>
+            <div class="text">
+              <div class="icon"><img src="./images/Logo color.png" alt="product_icon"></div>
+              <div class="product_text">
+                <h3>Creative Cloud All Apps</h3>
+                <p>Easily create stunning social graphics, short videos, and web pages that make you stand out.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="product_post">
+            <div class="image"><img src="./images/6.png" alt="post_image"></div>
+            <div class="text">
+              <div class="icon"><img src="./images/ps.png" alt="product_icon"></div>
+              <div class="product_text">
+                <h3>Photoshop - Image editing & design</h3>
+                <p>Create beautiful images, graphics, paintings, and 3D artwork on your desktop or iPad.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="product_post">
+            <div class="image"><img src="./images/7.png" alt="post_image"></div>
+            <div class="text">
+              <div class="icon"><img src="./images/Frame.png" alt="product_icon"></div>
+              <div class="product_text">
+                <h3>Illustrator - Logos, icons & illustration</h3>
+                <p>Create beautiful designs, icons, and more — then use them anyplace at any size.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="product_post">
+            <div class="image"><img src="./images/8.png" alt="post_image"></div>
+            <div class="text">
+              <div class="icon"><img src="./images/pr.png" alt="product_icon"></div>
+              <div class="product_text">
+                <h3>Premiere Pro-Video editing</h3>
+                <p>Create everything from social clips to feature films with the leading video editor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Creative Cloud Section end -->
+
+
+  <!-- post section starts -->
+  <section id="post_design">
+    <div class="container">
+      <div class="post_container">
+        <div class="post">
+          <div class="image"><img src="./images/9.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Onça</h3>
+              <p>Alejandro Gavancho</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>195</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/10.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>VARNE</h3>
+              <p>Mahmod Mowafy</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>197</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1.4k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/11.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Sunday Best & Someday Studio for BEETL</h3>
+              <p>Multiple Owners <img src="./images/Vector 1.png" alt="arrow"></p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>278</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>787</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/12.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>cool fish</h3>
+              <p>Johann Banta</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>259</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/13.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>NANTES MURAL</h3>
+              <p>OCU .</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>395</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1.9k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/14.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>VOGUE ARABIA 2023</h3>
+              <p>Agnieszka Hoscilo</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>137</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1.1k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/15.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>NEVER SETTLE – FREELETICS AD 2021</h3>
+              <p>Multiple Owners <img src="./images/Vector 1.png" alt="arrow"></p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>58</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>627</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/16.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Arab Character Design</h3>
+              <p>serag basel™</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>299</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1.2k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/17.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Bally Sports | MLB 2022</h3>
+              <p>|drive| studio</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>295</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/18.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>A digital heaven for perfume enthusiasts</h3>
+              <p>Vasava Stud</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>487</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1.5k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/19.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Nestor Salinas</h3>
+              <p>Myriam Wares</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>178</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>987</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/20.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Increment Magazine</h3>
+              <p>Multiple Owners <img src="./images/Vector 1.png" alt="arrow"></p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>295</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="image"><img src="./images/21.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Bagel - Metascale</h3>
+              <p>Multiple Owners <img src="./images/Vector 1.png" alt="arrow"></p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>195</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1.5k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/22.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>Domo - Brand Identity</h3>
+               <p>Multiple Owners <img src="./images/Vector 1.png" alt="arrow"></p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>387</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>2.5k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/23.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>TV Show Duos</h3>
+              <p>Jovana Randjelovic</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>178</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>587</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="image"><img src="./images/24.png" alt="post_image"></div>
+          <div class="text">
+            <div class="post_text">
+              <h3>ABCD Consulting</h3>
+              <p>Lissa Kravts</p>
+            </div>
+            <div class="post_icon">
+              <div class="icon">
+                <img src="./images/like.png" alt="icon">
+                <span>300</span>
+              </div>
+
+              <div class="icon">
+                <img src="./images/eye.png" alt="icon">
+                <span>1k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- post section ends -->
+
+
+  <!-- footer section starts -->
+  <footer>
+    <div class="container">
+      <div class="footer_container">
+        <div class="footer_menu">
+          <ul>
+            <li><a href="#">More Behance <span><img src="./images/Vector 1.png" alt="arrow"></span></a></li>
+            <li class="divider"></li>
+            <li><a href="#">English <span><img src="./images/Vector 1.png" alt="arrow"></span></a></li>
+            <li class="divider"></li>
+            <li><a href="#">TOU</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Cookie preferences</a></li>
+            <li><a href="#">Do not sell or share my personal information</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_logo">
+          <img src="./images/finish.png" alt="logo">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section ends-->
+
+
+
 </body>
+
 </html>
